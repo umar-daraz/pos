@@ -1,0 +1,6 @@
+{:nrepl {:port 9002}
+ :deps {:aliases [:cljs]}
+ :builds {:app {:modules  {:main {:entries [pos.core] :init-fn pos.core/main}}
+                :target :browser
+                :devtools {:watch-dir "resources/public"}
+                :output-dir "resources/public/js"}}}

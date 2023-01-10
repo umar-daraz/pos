@@ -1,0 +1,163 @@
+@import "theme.scss";
+
+img {
+    object-fit: cover;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+  font-family: "Gilroy";
+  color: $secondary;
+}
+
+input {
+    padding: 5px 10px;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+.semi-bold {
+    font-weight: 600;
+}
+
+ul {
+    list-style: none;
+}
+
+.app-wrapper {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    height: 100%;
+
+    .navbar {
+        padding-top: 2rem;
+        align-items: flex-start;
+        background-color: $secondary-900;
+    }
+
+    .navbar-nav {
+        width: 100%;
+        padding-inline-start: 0px;
+        text-align: center;
+    }
+
+    .nav-item {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-weight: 600;
+
+        &:hover {
+            background-color: black;
+        }
+
+        &.active {
+            a {
+              color: #fff;
+              font-weight: 600;
+            }
+        }
+
+        a {
+            text-decoration: none;
+            font-weight: 400;
+            color: $secondary-200;
+        }
+    }
+
+    .page-wrapper {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 1rem;
+    }
+}
+
+.table {
+    border-collapse: collapse;
+    thead {
+        tr {
+            border-bottom: 2px solid $neutral-300;
+        }
+    }
+
+    th {
+        text-align: start;
+        border-left: 2px solid $neutral-300;
+        font-size: 12px;
+        text-transform: uppercase;
+        padding: 8px 8px 6px 8px;
+    }
+
+    .action-column {
+        width: 180px;
+        text-align: end;
+    }
+
+    th:first-child {
+        border-left: none;
+    }
+
+    tbody {
+        tr {
+            border-bottom: 1px solid $neutral-300;
+        }
+        td {
+            // border-left: 1px solid $neutral-300;
+            padding: 8px;
+            font-size: 13px;
+        }
+
+        td:first-child {
+            border-left: none;
+        }
+
+        .action-column {
+            width: 180px;
+            text-align: end;
+        }
+    }
+}
+
+.form-label {
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 8px;
+}
+
+.form-control {
+    height: 32px;
+    border: 1px solid $neutral-400;
+    width: 100%;
+    border-radius: 4px;
+    padding-inline-start: 16px;
+    padding-inline-end: 16px;
+    outline: none;
+    &:hover {
+        box-shadow: 0 0 0 2px rgb(161 161 161 / 25%);
+    }
+    &:focus {
+        border-color: $primary;
+    }
+
+    &:visited {
+        border-color: $primary;
+    }
+
+    &:focus-visible {
+        border-color: $primary;
+    }
+
+    &:active {
+        border-color: $primary;
+    }
+}

@@ -1,0 +1,15 @@
+#login {
+    height: 100%;
+    .login-form {
+        width: 400px;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        // button {
+        //    background-color: var(--primary-9);
+        //    color: #FFFFFF;
+        //    font-weight: bold;
+        // }
+    }
+}

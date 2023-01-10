@@ -1,0 +1,7 @@
+node_modules/
+.shadow-cljs/
+.cpcache/
+cognitect-dev-tools-0.9.72.zip
+cognitect-dev-tools-0.9.72/
+resources/public/js
+resources/public/css
